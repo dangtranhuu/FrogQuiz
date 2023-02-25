@@ -116,7 +116,7 @@
                         </tr>
                     </thead>
                     <tbody ng-repeat="u in Users">
-                        <tr class="pc" ng-if="$index % 2 == 0">
+                        <tr class="pc" ng-if="u.role!=1">
                             <td>{{u.username}}</td>
                             <td>{{u.fullname}}</td>
                             <td>{{u.email}}</td>

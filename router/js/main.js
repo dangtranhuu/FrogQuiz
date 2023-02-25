@@ -156,6 +156,9 @@ app.config(function ($routeProvider) {
         .when("/forgetpassword", {
             templateUrl: "router/forgetpassword.html", controller: "forgetPasswordCtrl"
         })
+        .when("/manager", {
+            templateUrl: "router/manager.html", controller: "managerCtrl"
+        })
         .otherwise({ redirectTo: "/main" });
 });
 

@@ -243,8 +243,9 @@
                     <a>Hi, {{Student.fullname.slice(Student.fullname.lastIndexOf(" "))}}
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
-                    <ul class="subnav subnav-user" >
+                    <ul class="subnav subnav-user">
                         <li><a href="#infor">Chỉnh sửa thông tin</a></li>
+                        <li><a ng-if="Student.role == 1" href="#manager">Quản lí tài khoản</a></li>
                         <li><a href="#changepassword">Đổi mật khẩu</a></li>
                         <li><a ng-click="logout()">Đăng xuất</a></li>
                     </ul>

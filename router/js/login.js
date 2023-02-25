@@ -2,7 +2,7 @@ app.controller("loginCtrl", function ($rootScope, $scope) {
     var check = false;
     $scope.login = function () {
 
-        let user = $scope.email;
+        let user = $scope.email.toLowerCase();
         let pass = $scope.pass;
 
         let path = 'user';
@@ -21,7 +21,6 @@ app.controller("loginCtrl", function ($rootScope, $scope) {
                 });
             }
             else {
-                let getgetEmail = snapshot.val().email;
                 let getPass = snapshot.val().password;
                 if (pass == getPass) {
                     check = true;

@@ -27,6 +27,7 @@ app.controller("loginCtrl", function ($rootScope, $scope) {
                     $rootScope.Student = snapshot.val();
                     $rootScope.User= $rootScope.Student;
                     
+                    let pointer = localStorage.getItem("FrogQuiz-Cursor");
                     if(pointer == '#course'){
                         return;
                     }

@@ -30,6 +30,10 @@ app.controller("loginCtrl", function ($rootScope, $scope) {
                     localStorage.setItem("user-name", user);
                     localStorage.setItem("user-pass", getPass);
                     
+                    if(pointer == '#course'){
+                        return;
+                    }
+                    
                     Swal.fire({
                         title: '<h1 style="color: red; font-size:20px;font-weight: bold;">Đăng nhập thành công...</h1>',
                         icon: 'success',

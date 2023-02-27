@@ -31,7 +31,7 @@ app.controller("loginCtrl", function ($rootScope, $scope) {
                     localStorage.setItem("user-pass", getPass);
                     
                     Swal.fire({
-                        title: '<h1 style="color: red; font-size:20px;font-weight: bold;">Đăng nhập thành công</h1>',
+                        title: '<h1 style="color: red; font-size:20px;font-weight: bold;">Đăng nhập thành công...</h1>',
                         icon: 'success',
                         showConfirmButton: false,
                         showCancelButton: false,
